@@ -1,0 +1,6 @@
+kafka:
+  topic: "wikimedia.recentchange"
+opensearch:
+  index: "wikimedia"
+server:
+  port: 8051
