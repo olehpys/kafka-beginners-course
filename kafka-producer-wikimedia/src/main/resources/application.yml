@@ -1,0 +1,4 @@
+kafka:
+  topic: "wikimedia.recentchange"
+server:
+  port: 8050
