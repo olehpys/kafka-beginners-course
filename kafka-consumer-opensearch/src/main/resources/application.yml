@@ -13,3 +13,8 @@ spring:
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       group-id: consumer-opensearch-demo
       auto-offset-reset: latest
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
