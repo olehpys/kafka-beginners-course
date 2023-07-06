@@ -1,6 +1,7 @@
 kafka:
   topic: "wikimedia.recentchange"
 opensearch:
+  url: ${OPENSEARCH_URL:http://localhost:9200}
   index: "wikimedia"
 server:
   port: 8051
