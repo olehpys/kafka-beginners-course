@@ -6,7 +6,7 @@ server:
   port: 8051
 spring:
   kafka:
-    bootstrap-servers: 127.0.0.1:9092
+    bootstrap-servers: ${KAFKA_SERVER:"127.0.0.1:9092"}
     consumer:
       enable-auto-commit: false
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
