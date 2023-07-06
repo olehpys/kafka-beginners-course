@@ -3,9 +3,9 @@ scrape_configs:
     metrics_path: '/actuator/prometheus'
     scrape_interval: 5s
     static_configs:
-      - targets: ['host.docker.internal:8050']
+      - targets: ['kafka-producer-wikimedia:8050']
   - job_name: 'kafka-consumer-opensearch'
     metrics_path: '/actuator/prometheus'
     scrape_interval: 5s
     static_configs:
-      - targets: ['host.docker.internal:8051']
+      - targets: ['kafka-consumer-opensearch:8051']
